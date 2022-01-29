@@ -6,7 +6,7 @@ namespace FunctionalProgramming
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.FlipCoinProgram /n 2.LeapYear /n 3.Exit /n");
+            Console.WriteLine("1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Exit \n");
             bool flag = true;
 
             while (true)
@@ -23,6 +23,10 @@ namespace FunctionalProgramming
                         ly.CheckYear();
                         break;
                     case 3:
+                        PowerOfTwo pot = new PowerOfTwo();
+                        pot.Power();
+                        break;
+                    case 4:
                         break;
                     default:
                         Console.WriteLine("Enter correct option...");
