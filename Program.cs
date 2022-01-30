@@ -6,7 +6,7 @@ namespace FunctionalProgramming
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(" 1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Harmonic Function \n 5.Factor \n 6.Swap \n 7.EvenOdd \n 8. Quotient and Remainder \n 9. Alphabet \n 10.Exit \n");
+            Console.WriteLine(" 1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Harmonic Function \n 5.Factor \n 6.Swap \n 7.EvenOdd \n 8. Quotient and Remainder \n 9. Alphabet \n 10.Largest Number \n 11.Exit \n");
             bool flag = true;
 
             while (true)
@@ -51,6 +51,10 @@ namespace FunctionalProgramming
                         a1.check();
                         break;
                     case 10:
+                        LargestNumber ln = new LargestNumber();
+                        ln.largeNum();
+                        break;
+                    case 11:
                         break;
                     default:
                         Console.WriteLine("Enter correct option...");
