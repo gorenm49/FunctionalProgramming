@@ -6,7 +6,7 @@ namespace FunctionalProgramming
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Harmonic Function \n 5.Factor \n 6.Swap \n 7.Exit \n");
+            Console.WriteLine("1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Harmonic Function \n 5.Factor \n 6.Swap \n 7.EvenOdd \n 8.Exit \n");
             bool flag = true;
 
             while (true)
@@ -39,6 +39,11 @@ namespace FunctionalProgramming
                         sp.swapNumber();
                         break;
                     case 7:
+                        EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.evenOddFun();
+                        break;
+                
+                    case 8:
                         break;
                     default:
                         Console.WriteLine("Enter correct option...");
