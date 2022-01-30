@@ -6,7 +6,7 @@ namespace FunctionalProgramming
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Exit \n");
+            Console.WriteLine("1.FlipCoinProgram \n 2.LeapYear \n 3.Power Of two \n 4.Harmonic Function \n 5.Exit \n");
             bool flag = true;
 
             while (true)
@@ -27,6 +27,10 @@ namespace FunctionalProgramming
                         pot.Power();
                         break;
                     case 4:
+                        HarmonicNumber hn = new HarmonicNumber();
+                        hn.Harmonic();
+                        break;
+                    case 5:
                         break;
                     default:
                         Console.WriteLine("Enter correct option...");
